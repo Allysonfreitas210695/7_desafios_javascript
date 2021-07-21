@@ -10,13 +10,25 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #333;
+    background-color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
+
+    background-image: url("https://img.olhardigital.com.br/wp-content/uploads/2020/12/google-maps-logomarca-1200x450.jpg");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: top center;
 }
 
 h1 {
-    color: #FFF;
-    margin: 20px 0;
+    color: #000;
+    opacity: 0.6;
+    margin: 60px 0 20px 0;
+    font-family: sans-serif;
+    text-align: center;
+    box-shadow: 0 0 0 2px yellow;
+    padding: 10px;
+    border-radius: 50%;
+
 }
 
 .busca {
@@ -25,18 +37,20 @@ h1 {
 }
 .busca #searchInput {
     flex: 1;
+    background-color: #0202;
     padding: 10px;
     outline: none;
     font-size: 15px;
     border-radius: 5px;
     border: 0;
 }
+
 .busca button {
     padding: 10px;
     font-size: 15px;
     border: 0;
-    background-color: #555;
-    color: #FFF;
+    background-color: rgb(60, 57, 57);
+    color: white;
     border-radius: 5px;
     margin-left: 10px;
     cursor: pointer;
@@ -48,15 +62,17 @@ h1 {
 .resultado {
     width: 300px;
     display: none;
-    border: 1px dotted #FFF;
+    border: 1px dotted #000;
     margin-top: 20px;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.1);
+    
 }
 
 .titulo {
     width: 100%;
-    color: #FFF;
+    
+    color: #000;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
@@ -67,23 +83,27 @@ h1 {
     display: flex;
     width: 100%;
 }
+
 .info .temp {
     flex: 1;
     text-align: center;
 }
+
 .info .vento {
     flex: 1;
     text-align: center;
 }
+
 .tempTitulo,
 .ventoTitulo {
-    color: #777;
+    color: #000;
     font-size: 16px;
     margin-bottom: 5px;
 }
+
 .tempInfo,
 .ventoInfo {
-    color: #FFF;
+    color: #000;
     font-size: 30px;
     font-weight: bold;
 }
@@ -91,34 +111,37 @@ h1 {
     font-size: 15px;
     font-weight: normal;
 }
+
 .ventoInfo span {
     font-size: 15px;
     font-weight: normal;
 }
+
 .ventoArea {
     width: 50px;
     height: 50px;
-    border: 1px solid #FFF;
+    border: 1px solid #000;
     border-radius: 50%;
     margin: auto;
     margin-top: 20px;
     padding-left: 25px;
     padding-top: 25px;
 }
+
 .ventoPonto {
-    width: 15px;
-    height: 1px;
-    background-color: #FFF;
+    width: 20px;
+    height: 3px;
+    background-color: red;
     transform-origin: left;
 }
 
 .aviso {
-    color: #FFF;
+    color: #000;
     padding-top: 20px;
 }
 
 footer {
     margin-top: 20px;
-    color: #FFF;
+    color: #000;
     font-size: 13px;
 }

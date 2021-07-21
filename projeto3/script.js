@@ -3,7 +3,7 @@ const formResult = document.querySelector('.busca');
 formResult.addEventListener('submit',async function(event) {
   event.preventDefault();
   
-  inputResult = document.querySelector('#searchInput').value;
+  let inputResult = document.querySelector('#searchInput').value;
   
   if(inputResult !== ''){
     clearInfo();
@@ -32,7 +32,7 @@ formResult.addEventListener('submit',async function(event) {
   }else{
     clearInfo();
   }
-  
+  document.querySelector('.busca input').value = '';
 })
 
 //parte 1
